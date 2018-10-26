@@ -1,0 +1,54 @@
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://images.pexels.com/photos/15382/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .background .text {
+    text-align: center; }
+    .background .text .variable {
+      font-family: 'Permanent Marker', cursive;
+      margin: 20px;
+      font-size: 6em;
+      animation: 2s ease 0s forwards 1 fadein;
+      -webkit-animation: 2s ease 0s forwards 1 fadein; }
+    .background .text .cssfonts {
+      font-family: 'Pacifico', cursive;
+      font-size: 4em;
+      transition-delay: 3sec;
+      animation: 3s ease 0s forwards 1 fadein;
+      -webkit-animation: 3s ease 0s forwards 1 fadein;
+      transition-duration: 5s; }
+    .background .text .multiple {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 1.6em;
+      margin-top: 20px;
+      animation: 4s ease 0s forwards 1 fadein;
+      -webkit-animation: 4s ease 0s forwards 1 fadein; }
+    .background .text .imagine {
+      font-family: 'Charmonman', cursive;
+      font-size: 1.3em;
+      width: 400px;
+      margin: 20px auto;
+      animation: 5s ease 0s forwards 1 fadein;
+      -webkit-animation: 5s ease 0s forwards 1 fadein; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*# sourceMappingURL=main.css.map */
