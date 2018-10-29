@@ -1,17 +1,19 @@
 .background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   background: url(https://images.pexels.com/photos/15382/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   .text {
+    position: relative;
+    margin: 0 auto;
     text-align: center;
     .variable {
       font-family: 'Permanent Marker', cursive;
-      margin: 20px;
+      margin: 0 20px;
       font-size: 6em;
       animation: 2s ease 0s forwards 1 fadein;
       -webkit-animation: 2s ease 0s forwards 1 fadein;
@@ -42,7 +44,7 @@
   }
 }
 
-//keyframes
+// animation keyframes
 
 @keyframes fadein{
   0%{opacity:0}
