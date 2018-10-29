@@ -3,7 +3,9 @@ body {
   --dp-fontfamily-boxes: 'Acme', sans-serif;
   --dp-fontsize-boxes: 1.5em;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  width: 100%;
+  height: 100%; }
 
 .background {
   position: relative;
@@ -59,6 +61,12 @@ body {
     opacity: 0; }
   100% {
     opacity: 1; } }
+@media screen and (orientation: portrait) {
+  height: 100vh;
+  width: 100vw; }
+@media screen and (orientation: landscape) {
+  height: 100vh;
+  width: 100vw; }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -103,10 +111,8 @@ table {
   border-spacing: 0; }
 
 .boxes-container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  height: 500px; }
+  height: 100vh;
+  width: 100vw; }
   .boxes-container .boxtrio {
     margin: 20px;
     display: block;
