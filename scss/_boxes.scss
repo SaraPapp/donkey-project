@@ -1,14 +1,34 @@
-.boxes-container {
+#boxes-container {
   height: 100vh;
   width: 100vw;
+  position: relative;
+  width: 500px;
+  min-height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
 
-  .boxtrio {
-    margin: 20px;
+  /*.boxtrio {
+    position: relative;
     display: block;
-    max-width: 1200px;
-    width: 100%;
+    width: calc(500px * 3);
+    margin-left: 0;*/
 
-    .box {
+.box-wrap {
+  position: relative;
+  width: 500px;
+  min-height: 300px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+  .slide-content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .box {
       @include box-style();
       .box-text {
         @include box-text-style();
@@ -34,12 +54,27 @@
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
       }
-    }
-    .box-text:hover {
-      opacity: 1;
-    }
+   /* }*/
+  }
+
+  //Slider
+  .left,
+  .right {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    line-height: 300px;
+    padding: 0 20px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
   }
 }
-
-
 

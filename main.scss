@@ -1,7 +1,7 @@
 body {
-   --dp-color-boxes: rgba(111, 107, 107, 0.8);
-   --dp-fontfamily-boxes: 'Acme', sans-serif;
-   --dp-fontsize-boxes: 1.5em;
+  --dp-color-boxes: rgba(111, 107, 107, 0.8);
+  --dp-fontfamily-boxes: 'Acme', sans-serif;
+  --dp-fontsize-boxes: 1.5em;
   padding: 0;
   margin: 0;
   width: 100%;
@@ -11,16 +11,18 @@ body {
 // Mixins
 
 @mixin box-style() {
-  display: inline-block;
-  position: relative;
-  margin: 0 2%;
+  margin: 20px;
+  float: left;
   max-width: 300px;
   width: 100%;
   height: 400px;
+  position: relative;
+  box-sizing:border-box;
   background-color: var(--dp-color-boxes);
-  overflow: hidden;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
   transition: box-shadow 500ms;
+  border-radius: 2px;
+  overflow: hidden;
 }
 
 @mixin box-text-style() {
@@ -28,7 +30,7 @@ body {
   width: 100%;
   text-align: center;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 35%;
   font-family: var(--dp-fontfamily-boxes);
   font-size: var(--dp-fontsize-boxes);
@@ -46,7 +48,6 @@ body {
 @import 'scss/topbanner';
 @import 'scss/reset';
 @import 'scss/boxes';
-@import 'scss/slide';
 
 .main {
   width: 100%;
