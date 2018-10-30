@@ -111,30 +111,27 @@ table {
   border-spacing: 0; }
 
 #boxes-container {
-  height: 100vh;
-  width: 100vw;
+  /*height: 100vh;
+  width: 100vw;*/
   position: relative;
-  width: 500px;
-  min-height: 300px;
+  width: 350px;
+  min-height: 400px;
   overflow: hidden;
-  margin: 0 auto;
-  /*.boxtrio {
-    position: relative;
-    display: block;
-    width: calc(500px * 3);
-    margin-left: 0;*/ }
+  margin: 0 auto; }
   #boxes-container .box-wrap {
-    position: relative;
-    width: 500px;
-    min-height: 300px;
-    overflow: hidden;
-    width: 100%;
-    margin: 0 auto; }
-  #boxes-container .slide-content {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box; }
+    width: calc(350px * 3);
+    margin-left: 0; }
+    #boxes-container .box-wrap .left,
+    #boxes-container .box-wrap .right {
+      position: absolute;
+      top: 45%;
+      padding: 0 20px;
+      cursor: pointer;
+      z-index: 10; }
+    #boxes-container .box-wrap .left {
+      left: -20px; }
+    #boxes-container .box-wrap .right {
+      right: -20px; }
   #boxes-container .box {
     margin: 20px;
     float: left;
@@ -148,6 +145,11 @@ table {
     transition: box-shadow 500ms;
     border-radius: 2px;
     overflow: hidden; }
+    #boxes-container .box .slide-content {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box; }
     #boxes-container .box .box-text {
       max-width: 100px;
       width: 100%;
@@ -172,27 +174,11 @@ table {
       -webkit-transition: all 0.5s;
       transition: all 0.5s; }
   #boxes-container .box-image:hover {
-    opacity: .8;
-    /* }*/ }
+    opacity: .8; }
     #boxes-container .box-image:hover img:hover {
       -moz-transform: scale(1.1);
       -webkit-transform: scale(1.1);
       transform: scale(1.1); }
-  #boxes-container .left,
-  #boxes-container .right {
-    position: absolute;
-    top: 0;
-    width: 40px;
-    height: 100%;
-    line-height: 300px;
-    padding: 0 20px;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 10; }
-  #boxes-container .left {
-    left: 0; }
-  #boxes-container .right {
-    right: 0; }
 
 .main {
   width: 100%;
